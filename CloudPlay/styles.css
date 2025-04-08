@@ -276,3 +276,47 @@ header {
     color: #fc00ff !important;
     font-weight: 500;
 }
+/* Estilos para os formulários de autenticação */
+.auth-container {
+    position: relative;
+    width: 90%;
+    max-width: 400px;
+    margin: 50px auto;
+    min-height: 500px;
+}
+
+.login-form, .register-form {
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    width: 100%;
+}
+
+.register-form {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(20px);
+}
+
+.register-form:not(.hidden) {
+    opacity: 1;
+    pointer-events: all;
+    transform: translateY(0);
+}
+
+.login-form.hidden {
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(-20px);
+}
+
+/* Garante que o formulário ativo fique acima */
+.login-form:not(.hidden), .register-form:not(.hidden) {
+    position: relative;
+    z-index: 2;
+}
