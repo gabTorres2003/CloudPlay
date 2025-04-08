@@ -1,18 +1,35 @@
+<?php
+session_start();
+
+// Verifica se o usuário está "logado" (sem validação real)
+if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
+    header("Location: login.php");
+    exit;
+}
+?>
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Game Streaming Platform</title>
+    <title>Cloud Play - Página Principal</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Primeira Seção (Primeiro Print) -->
+    <header>
+        <h1>Bem-vindo ao Cloud Play</h1>
+        <p>Você está logado como: <?php echo htmlspecialchars($_SESSION['email']); ?></p>
+        <a href="logout.php" class="logout-btn">Sair</a>
+    </header>
+
     <section class="hero">
         <div class="container">
             <h1>Play Anywhere,<br>No Downloads Required</h1>
             <p>Stream high-end games instantly on any device. Experience gaming without limitations.</p>
+            
             <div class="divider"></div>
+            
             <div class="cta">
                 <h2>Start Gaming Now</h2>
                 
@@ -36,12 +53,12 @@
             </div>
         </div>
     </section>
+    
     <section class="featured-games">
         <div class="container">
             <h2>Featured Games</h2>
             
             <div class="games-grid">
-                <!-- Jogo 1 -->
                 <div class="game-card">
                     <div class="game-info">
                         <h3 class="game-title">Cyberpunk 2077</h3>
@@ -50,7 +67,6 @@
                     </div>
                 </div>
                 
-                <!-- Jogo 2 -->
                 <div class="game-card">
                     <div class="game-info">
                         <h3 class="game-title">Forza Horizon 5</h3>
@@ -59,7 +75,6 @@
                     </div>
                 </div>
                 
-                <!-- Jogo 3 -->
                 <div class="game-card">
                     <div class="game-info">
                         <h3 class="game-title">Red Dead Redemption 2</h3>
@@ -68,7 +83,6 @@
                     </div>
                 </div>
                 
-                <!-- Jogo 4 -->
                 <div class="game-card">
                     <div class="game-info">
                         <h3 class="game-title">Elden Ring</h3>
