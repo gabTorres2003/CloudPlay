@@ -13,7 +13,8 @@ Projeto desenvolvido para avaliação da disciplina de Interação Humano Comput
 
 ## Autores
 
-- [gabTorres2003](https://github.com/gabTorres2003)
+- [Gabriel-Torres](https://github.com/gabTorres2003)
+- [Nathan-Moreth](https://github.com/Neithannnnn)
 
 
 ## Feedback
