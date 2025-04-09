@@ -23,7 +23,7 @@ Se você tiver alguma sugestão ou quiser avaliar nosso trabalho basta acessar o
 
 ## Aprendizados
  
-Desenvolvemos bastante conhecimento prático em PHP, principalmente no quesito formulários, que é o principal da página de login e interação de servidores locais entre os documentos do projeto. Além da prática do CSS e HTML básico, que são sempre fundamentais em WEB
+Desenvolvemos bastante conhecimento prático em PHP, principalmente no quesito formulários, que é o principal da página de login e interação de servidores locais entre os documentos do projeto. Além da prática do CSS e HTML básico, que são sempre fundamentais em WEB.
 
 
 
